@@ -27,7 +27,7 @@ To set up and run the GraphQL server locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/millidavitti/aws_graphql_server.git
    ```
 
 2. Install the dependencies:
@@ -37,12 +37,7 @@ To set up and run the GraphQL server locally, follow these steps:
    npm install
    ```
 
-3. Set environment variables:
-
-   - Create a `.env` file in the root directory of the project.
-   - Add the necessary environment variables for your setup, such as the REST API base URL.
-
-4. Start the server locally:
+3. Start the server locally:
 
    ```bash
    npm run start
@@ -50,7 +45,7 @@ To set up and run the GraphQL server locally, follow these steps:
 
    This command will start the GraphQL server locally on the specified port.
 
-5. Access the GraphQL Playground:
+4. Access the GraphQL Playground:
 
    Open your browser and visit `http://localhost:4000` to access the GraphQL Playground. Here, you can test and interact with the GraphQL API.
 
