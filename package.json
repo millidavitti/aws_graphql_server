@@ -1,0 +1,19 @@
+{
+	"name": "pre_signed_url",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "nodemon src/server.js"
+	},
+	"dependencies": {
+		"@apollo/datasource-rest": "^6.0.0",
+		"@apollo/server": "^4.7.1",
+		"@as-integrations/aws-lambda": "^2.0.1",
+		"graphql": "^16.6.0",
+		"graphql-tag": "^2.12.6",
+		"uuid": "^9.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

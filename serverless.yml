@@ -1,0 +1,16 @@
+service: apollo-lambda
+provider:
+  name: aws
+  runtime: nodejs16.x
+  httpApi:
+    cors: true
+functions:
+  graphql:
+    handler: src/serverless.graphqlHandler
+    events:
+      - httpApi:
+          path: /
+          method: POST
+      - httpApi:
+          path: /
+          method: GET
