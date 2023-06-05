@@ -1,9 +1,8 @@
 const { v4: uuidv4 } = require("uuid");
 const resolvers = {
 	Query: {
-		hello: () => "world",
-		getCompanies(_, _, { dataSources }) {
-			return dataSources.companyAPI.getCompanies();
+		getCompanies(_, { skip, limit }, { dataSources }) {
+			return dataSources.companyAPI.getCompanies(skip, limit);
 		},
 		getCompany(_, { id }, { dataSources }) {
 			if (!UUIDRegex.test(id))

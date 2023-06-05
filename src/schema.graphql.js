@@ -3,8 +3,8 @@ const gql = require("graphql-tag");
 const typeDefs = gql`
 	# Schema definitions go here
 	type Query {
-  getCompanies:[Company]!
-		getCompany(id: String): Company!
+		getCompanies(skip: Int, limit: Int): [Company]!
+		getCompany(id: String!): Company!
 		getSignedUploadUrl(input: SignedFileUploadInput): SignedLinkData!
 		getSignedDownloadUrl(s3Key: String): SignedLinkData!
 	}

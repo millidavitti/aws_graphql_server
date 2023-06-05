@@ -4,7 +4,8 @@ class CompanyAPI extends RESTDataSource {
 	baseURL = "https://aws-signed-url.vercel.app/api/";
 	// baseURL = "http://localhost:3000//api/";
 
-	getCompanies() {
+	getCompanies(skip = 0, limit = 5) {
+		if (skip || limit) return this.get(`company?skip=${skip}&limit=${limit}`);
 		return this.get("company");
 	}
 
